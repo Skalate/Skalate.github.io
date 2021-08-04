@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="liluan">
+  <link rel="canonical" href="https://mkdocs.zimoapps.com/text/Pandoc/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Pandoc用法指南 - LiLuan's Blog</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Pandoc\u7528\u6cd5\u6307\u5357";
+    var mkdocs_page_input_path = "text\\Pandoc.md";
+    var mkdocs_page_url = "/text/Pandoc/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> LiLuan's Blog</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">主页</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../MyPC/">我的笔记</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">文本编辑</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../MkDocs/">MkDocks用法指南</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MarkDown/">MarkDown用法指南</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../LatexNote/">LaTeX用法指南</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Pandoc用法指南</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">编程</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code/C/">C/C++</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code/Python/">Python</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code/java/">Java</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../code/matlab/">Matlab</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">社会</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../skill/god/">周易</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">关于</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/release-notes/">发行说明</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/contributing/">贡献</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../about/license/">许可</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">LiLuan's Blog</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>文本编辑 &raquo;</li>
+        
+      
+    
+    <li>Pandoc用法指南</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="pandoc-install">Pandoc Install</h2>
+<h2 id="use-of-pandoc">Use of Pandoc</h2>
+<h3 id="cmd">命令行CMD操作</h3>
+<p>基本格式<code>Pandoc test.md -o test.pdf</code>配置项（加在基本格式后面）</p>
+<p><code>--template [template]</code>    使用模板（<code>ll\AppDate\Roming\pandoc\templates\eisvogel.latex</code>）</p>
+<p><code>--pdf-engine=xelatex</code>    生成pdf要使用xelatex引擎</p>
+<p><code>-V CJKmainfont="KaiTi"</code>    中文支持必须定义字体</p>
+<p><code>--to beamer</code>    生成beamer类型的PDF文件</p>
+<p><code>--listings</code>    代码加框</p>
+<h3 id="mdpdf">md转换为pdf</h3>
+<p>pandoc 不能直接生成 pdf 文档，需要借助 LaTeX 引擎。</p>
+<p>直接转换</p>
+<p>下面这条代码可以生成pdf格式的文件，但是不能调整格式。</p>
+<pre><code>pandoc test.md -o test2.pdf --pdf-engine=xelatex -V CJKmainfont=&quot;KaiTi&quot;
+</code></pre>
+<p>注意对于中文文档需要像以上命令这样指定pdf-engine和字体。不指定字体的话，汉字就会不显示。</p>
+<p>使用模板</p>
+<p>参考教程https://github.com/Wandmalfarbe/pandoc-latex-template。</p>
+<pre><code>pandoc example.md -o example.pdf --from markdown --template eisvogel.latex --listings
+</code></pre>
+<p>但原教程不支持中文，因此需要使用下列语句。</p>
+<pre><code>pandoc test.md -o test.pdf --from markdown --template eisvogel --listings --pdf-engine=xelatex -V CJKmainfont=&quot;KaiTi&quot;
+</code></pre>
+<p>效果非常棒，可以尝试一下换字体</p>
+<p>生成beamer文件</p>
+<p><code>pandoc "document.md" -o "document.pdf" --from markdown --to beamer --template "../../eisvogel.tex" --listings</code></p>
+<p><code>pandoc pandoc.md -o pandoc.pdf --from markdown --to beamer  --template eisvogel.latex --pdf-engine=xelatex -V CJKmainfont="KaiTi"</code></p>
+<h3 id="mdword">md转换为word</h3>
+<p>这个很简单<code>pandoc test.md -o test.docx</code>。</p>
+<p>同时在生成时也可以使用 -c 参数为文档指定样式文件（css文件）<code>pandoc test.md -o test.docx -c style.css</code>。
+这里的样式与生成 html 时的样式一样，针对 markdown 文档各个部分生成的 html 标签来应用，如：在样式文档中定义的 <code>h1 { font-size: 24px; }</code>。就会应用在以 # 开头的一级标题行。</p>
+<h3 id="mdhtml">md转换为html</h3>
+<p><code>pandoc -s -f gfm -t html5 --css=css/markdownPad-github.css test.md -o test.html</code></p>
+<p><code>-s</code> 表示使用标准模板输出</p>
+<p><code>-f gfm -t html5</code> 表示用 gfm 引擎来解析，从 Github Flavored MarkDown 到 HTML5。从网上看的别人写的是<code>-f markdown_github -t html</code>，试着使用这个来编译会产生Warning，提示找不到markdown_github，用gfm替代，索性就直接在命令里使用gfm。</p>
+<p><code>--css=css/markdownPad-github.css</code> 把 markdownPad-github.css 这个css文件加到生成的HTML文件中，是其呈现出不同的样式</p>
+<p><code>test.md -o test.html</code> 把test.md这个MarkDown文件输出成同的.html文件，这样使用有时候会有Warning，应该是需要把.html取一个与.md文件不同的名字</p>
+<p>本想使用github-markdown.css来呈现 github 式的 MarkDown 文件，但生成的html文件并没有.markdown-body等 class 名字，应该是 html 模板的原因，后来改用markdownPad-github.css</p>
+<h3 id="latexword">latex转word</h3>
+<pre><code>pandoc input.tex -o output.docx -w docx --reference-doc ref.docx --pdf-engine xelatex
+</code></pre>
+<p><code>input.tex</code>待转换文件；
+<code>output.docx</code>输出文件；
+<code>ref.docx</code>模板文件。</p>
+<h3 id="vscode">编辑器VSCode操作</h3>
+<p>在VSCode中的Setting.json文件内添加下述代码</p>
+<pre><code class="language-json">{
+    //-------- Pandoc Option Configuration --------
+
+    // pandoc .pdf output option template that you would like to use
+    &quot;pandoc.pdfOptString&quot;: &quot;--from markdown --template eisvogel.latex --pdf-engine=xelatex -V CJKmainfont=\&quot;KaiTi\&quot;&quot;,
+
+    // pandoc .docx output option template that you would like to use
+    &quot;pandoc.docxOptString&quot;: &quot;&quot;,
+
+    // pandoc .html output option template that you would like to use
+    &quot;pandoc.htmlOptString&quot;: &quot;-s -t html5&quot;,
+
+}
+
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../code/C/" class="btn btn-neutral float-right" title="C/C++">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../LatexNote/" class="btn btn-neutral" title="LaTeX用法指南"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2014 <a href="https://twitter.com/_tomchristie">Tom Christie</a>, Maintained by the <a href="/about/release-notes/#maintenance-team">MkDocs Team</a>. <a href="http://www.beian.miit.gov.cn" target="_blank">蜀ICP备19036239号</a></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/zimocode/mkdocs-docs-zh/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../LatexNote/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../code/C/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
