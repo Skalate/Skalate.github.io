@@ -1,5 +1,3 @@
-- 我的PC
-  - [我的设备](PC/MyPC.md)
 - 笔记教程
   - [LaTeX笔记](text/LatexNote.md)
   - [MarkDown笔记](text/MarkDown.md)
