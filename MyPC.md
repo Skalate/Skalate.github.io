@@ -1,9 +1,6 @@
----
-title: "我的工作站"
-author: [李峦]
-date: "2021-07-10"
-keywords: []
-...
+# 我的设备
+
+$$E=mc^2$$
 
 ## 设备
 
@@ -36,7 +33,7 @@ OneDrive
 锐龙R5-2500U PRO处理器
 
 
-### SWorkstations
+### Workstations
 
 
 #### 机箱
