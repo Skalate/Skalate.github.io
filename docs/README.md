@@ -1,20 +1,24 @@
 # Headline
 
-> [个人博客](https://blog.csdn.net/m0_37965018)
+> [个人博客](https://skalate.github.io/)
 
 
-> [GitHub](https://github.com/Corefo/ "github")
+> [GitHub](https://github.com/Skalate)
 
 
-## 公众号
+
 
 ## Contact
 
-Tencent QQ: 757122943
-
 WeChat: ll15358354378
 
-E-mail: [li_luan@outlook.com]()
+Tencent QQ: 757122943
+
+E-mail: li_luan@outlook.com
+
+QQ-mail: 757122943@qq.com
+
+EDU-mail: 20218121@bjtu.edu.cn
 
 
 

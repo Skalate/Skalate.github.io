@@ -1,11 +1,3 @@
----
-title: "Life is short, you need Python."
-author: [L.Li]
-date: "2021-05-21"
-keywords: [Python]
-header-center: "北京交通大学"
-footer-center: "Beijing Jiaotong University"
-...
 
 
 

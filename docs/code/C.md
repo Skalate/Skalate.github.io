@@ -1,11 +1,3 @@
----
-title: "Welcome to C/C++"
-author: [李峦]
-date: "2021-04-19"
-keywords: [C, C++]
-header-center: "北京交通大学"
-footer-center: "Beijing Jiaotong University"
-...
 
 
 

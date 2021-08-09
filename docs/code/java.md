@@ -1,11 +1,4 @@
----
-title: "Welcome to JAVA"
-author: [李峦]
-date: "2021-04-19"
-keywords: [java]
-header-center: "北京交通大学"
-footer-center: "Beijing Jiaotong University"
-...
+
 
 
 ``` java

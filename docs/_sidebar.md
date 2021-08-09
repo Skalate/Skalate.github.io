@@ -1,5 +1,11 @@
 - 我的PC
-  - [第一章节](MyPC.md)
+  - [我的设备](PC/MyPC.md)
+- 笔记教程
+  - [LaTeX笔记](text/LatexNote.md)
+  - [MarkDown笔记](text/MarkDown.md)
+  - [MkDocs](text/MkDocs.md)
+  - [Docsify](text/Docsify.md)
+  - [Pandoc](text/Pandoc.md)
 - 代码
   - [C语言](code/C.md)
   - [Java语言](code/java.md)
@@ -8,11 +14,6 @@
 - 技能
   - [玄学](skill/god.md)
   - [摄影](skill/photo.md)
-- 教程
-  - [LaTeX笔记](text/LatexNote.md)
-  - [MarkDown笔记](text/MarkDown.md)
-  - [MkDocs](text/MkDocs.md)
-  - [Pandoc](text/Pandoc.md)
 - 关于
   - [贡献](about/contributing.md) 
   - [许可证](about/license.md) 
