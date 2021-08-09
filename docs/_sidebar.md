@@ -12,6 +12,10 @@
 - 技能
   - [玄学](skill/god.md)
   - [摄影](skill/photo.md)
+- 北京交通大学
+  - [数字信号处理](BJTU/DSP.md) 
+  - [电路](BJTU/Circuit.md)
+  - [通信原理](BJTU/Phenomenon%20of%20Communication.md)
 - 关于
   - [贡献](about/contributing.md) 
   - [许可证](about/license.md) 
