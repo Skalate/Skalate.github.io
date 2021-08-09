@@ -1023,7 +1023,7 @@ usepackage{lmodern}         % include more fontsize, e.g. 15pt
 
 
 其他技巧
-提高编译速度 |draft
+提高编译速度，draft
 在不生成最终文件时，可以先不生成目录、导航、图片等东西，每一步只关注内容。
 
 ```
@@ -1031,7 +1031,7 @@ documentclass[draft]{beamer}
 ```
 
 
-提高编译速度 | 加载指定页
+提高编译速度，加载指定页
 给 frame 指定标签
 
 ```
@@ -1052,14 +1052,14 @@ includeonlyframes{example1, example2}
 ```
 
 
-生成打印版本 |handout
+生成打印版本，handout
 slides 的打印版本不希望有动态效果和章节封面
 
 ```
 documentclass[handout]{beamer}
 
 % 生成handout时重新定义这个颜色
-mode<handout>{%
+mode<handout>{
     definecolor{mygray}{RGB}{0,0,0}
 }
 ```
